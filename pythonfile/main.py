@@ -16,15 +16,11 @@ db_config = {
 conn = mysql.connector.connect(**db_config)
 cursor = conn.cursor()
 
-# 텍스트 파일에서 키 불러오기
-key_path = "/home/ubuntu/mlopspipeline/pythonfile/key.txt"
-with open(key_path,'r',encoding="UTF-8") as f:
-    key = f.readline()
-
 # 데이터 가져오는 코드 추가
 headers = {'Content-Type': 'application/json', 'charset': 'UTF-8', 'Accept': '*/*'}
 url = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo"
 
+key = '9+xsULVVtkmcT9/of4fUpyEz4wLCUNLexYSxxX1KI8yeVtKaNIw2698qQ+ymG5I1ibMzd3nN7AZkA/r2brLmVg=='
 # 원하는 항목들을 리스트로 정의
 items = ['삼성전자', 'SK하이닉스', '삼성바이오로직스', '삼성SDI',
         'LG화학', '현대차', 'NAVER', '카카오', 'KB금융', '현대모비스', '셀트리온']
@@ -48,22 +44,21 @@ for i in items:
     temp_df = pd.DataFrame()
 # 첫 번째 페이지 데이터를 가져와서 DataFrame으로 변환
     errorCount = 1
-    while errorCount <= 10 :
-        try:
-            response = requests.get(url=url, headers=headers, params=params)
-            total_count = response.json()['response']['body']['totalCount']
-            api_data = response.json()["response"]["body"]["items"]["item"]
-            df = pd.DataFrame(api_data)
-            break
-        except requests.exceptions.JSONDecodeError:
-                        time.sleep(5)
-                        print(f'error:{errorCount}')
-        except Exception:
-            errorCount = 11
-            break
+    total_count = 0
+    #while errorCount <= 10 :
+        # try:
+        #     print("test")
+    response = requests.get(url=url, headers=headers, params=params)
+    total_count = response.json()['response']['body']['totalCount']
+    api_data = response.json()["response"]["body"]["items"]["item"]
+    df = pd.DataFrame(api_data)
+        #     break
+        # except Exception:
+        #     errorCount = 11
+        #     sleep(5)
+        #     break
                         
         # 다음 페이지 데이터를 반복적으로 가져와서 DataFrame에 추가
-
     if total_count > params['numOfRows']:
         for i in range(2,total_count//10000+1):
             params['pageNo'] = i
@@ -74,6 +69,7 @@ for i in items:
                     data = response.json()["response"]["body"]["items"]["item"]
                     temp_df = pd.DataFrame(data)
                     df = pd.concat([df, temp_df], ignore_index=True)
+                    print('123')
                     break
                 except requests.exceptions.JSONDecodeError:
                     time.sleep(5)

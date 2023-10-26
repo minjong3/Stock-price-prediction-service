@@ -19,6 +19,11 @@ def collect_and_update_data():
 
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
+    # 연결이 제대로 설정되었는지 확인
+    if conn.is_connected():
+        print("MySQL 데이터베이스에 연결되었습니다.")
+    else:
+        print("MySQL 데이터베이스에 연결에 실패했습니다.")
     wentday = datetime.today() - timedelta(days=3) # 금요일 데이터를 월요일에 가져와서 이렇게 함
     beginBasDt = f'{wentday.year}{wentday.month}{wentday.day}' 
     # 데이터 가져오는 코드 추가
@@ -117,6 +122,6 @@ def collect_and_update_data():
 
     cursor.close()
     conn.close()
-    
+    print('저장완료')
 if __name__ == "__main__":
     collect_and_update_data()

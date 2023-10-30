@@ -1,0 +1,207 @@
+[2023-10-28 02:57:03,455] {processor.py:153} INFO - Started process (PID=759) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:03,456] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:57:03,456] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,456] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:03,466] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:03,714] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,714] {manager.py:508} INFO - Created Permission View: can edit on DAG:predict
+[2023-10-28 02:57:03,725] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,724] {manager.py:508} INFO - Created Permission View: can delete on DAG:predict
+[2023-10-28 02:57:03,732] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,732] {manager.py:508} INFO - Created Permission View: can read on DAG:predict
+[2023-10-28 02:57:03,733] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,733] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:57:03,742] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,741] {dag.py:2439} INFO - Creating ORM DAG for predict
+[2023-10-28 02:57:03,758] {logging_mixin.py:115} INFO - [2023-10-28 02:57:03,758] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:57:03,773] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.322 seconds
+[2023-10-28 02:57:33,846] {processor.py:153} INFO - Started process (PID=789) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:33,847] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:57:33,847] {logging_mixin.py:115} INFO - [2023-10-28 02:57:33,847] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:33,856] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:57:34,044] {logging_mixin.py:115} INFO - [2023-10-28 02:57:34,044] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:57:34,069] {logging_mixin.py:115} INFO - [2023-10-28 02:57:34,069] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:57:34,081] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.239 seconds
+[2023-10-28 02:58:04,148] {processor.py:153} INFO - Started process (PID=808) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:04,150] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:58:04,150] {logging_mixin.py:115} INFO - [2023-10-28 02:58:04,150] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:04,159] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:04,345] {logging_mixin.py:115} INFO - [2023-10-28 02:58:04,345] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:58:04,370] {logging_mixin.py:115} INFO - [2023-10-28 02:58:04,370] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:58:04,383] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.239 seconds
+[2023-10-28 02:58:34,450] {processor.py:153} INFO - Started process (PID=836) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:34,451] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:58:34,451] {logging_mixin.py:115} INFO - [2023-10-28 02:58:34,451] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:34,460] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:58:39,651] {logging_mixin.py:115} INFO - [2023-10-28 02:58:39,651] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:58:39,677] {logging_mixin.py:115} INFO - [2023-10-28 02:58:39,677] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:58:39,689] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 5.243 seconds
+[2023-10-28 02:59:09,761] {processor.py:153} INFO - Started process (PID=857) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:09,762] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:59:09,763] {logging_mixin.py:115} INFO - [2023-10-28 02:59:09,762] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:09,775] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:09,971] {logging_mixin.py:115} INFO - [2023-10-28 02:59:09,971] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:59:09,997] {logging_mixin.py:115} INFO - [2023-10-28 02:59:09,996] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:59:10,013] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.256 seconds
+[2023-10-28 02:59:40,095] {processor.py:153} INFO - Started process (PID=884) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:40,096] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 02:59:40,097] {logging_mixin.py:115} INFO - [2023-10-28 02:59:40,096] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:40,115] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 02:59:40,304] {logging_mixin.py:115} INFO - [2023-10-28 02:59:40,304] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 02:59:40,331] {logging_mixin.py:115} INFO - [2023-10-28 02:59:40,331] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-25T15:00:00+00:00, run_after=2023-10-26T15:00:00+00:00
+[2023-10-28 02:59:40,344] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.258 seconds
+[2023-10-28 03:00:10,419] {processor.py:153} INFO - Started process (PID=906) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:10,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:00:10,420] {logging_mixin.py:115} INFO - [2023-10-28 03:00:10,420] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:10,429] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:10,622] {logging_mixin.py:115} INFO - [2023-10-28 03:00:10,622] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:00:10,648] {logging_mixin.py:115} INFO - [2023-10-28 03:00:10,647] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:00:10,660] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.245 seconds
+[2023-10-28 03:00:40,734] {processor.py:153} INFO - Started process (PID=935) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:40,735] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:00:40,736] {logging_mixin.py:115} INFO - [2023-10-28 03:00:40,735] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:40,744] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:00:40,930] {logging_mixin.py:115} INFO - [2023-10-28 03:00:40,929] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:00:40,954] {logging_mixin.py:115} INFO - [2023-10-28 03:00:40,954] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:00:40,966] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.237 seconds
+[2023-10-28 03:01:11,037] {processor.py:153} INFO - Started process (PID=954) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:11,037] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:01:11,038] {logging_mixin.py:115} INFO - [2023-10-28 03:01:11,038] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:11,047] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:11,238] {logging_mixin.py:115} INFO - [2023-10-28 03:01:11,238] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:01:11,264] {logging_mixin.py:115} INFO - [2023-10-28 03:01:11,264] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:01:11,276] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.244 seconds
+[2023-10-28 03:01:41,350] {processor.py:153} INFO - Started process (PID=984) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:41,352] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:01:41,352] {logging_mixin.py:115} INFO - [2023-10-28 03:01:41,352] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:41,362] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:01:41,551] {logging_mixin.py:115} INFO - [2023-10-28 03:01:41,551] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:01:41,578] {logging_mixin.py:115} INFO - [2023-10-28 03:01:41,578] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:01:41,590] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.244 seconds
+[2023-10-28 03:02:11,679] {processor.py:153} INFO - Started process (PID=1011) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:11,679] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:02:11,680] {logging_mixin.py:115} INFO - [2023-10-28 03:02:11,680] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:11,688] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:16,886] {logging_mixin.py:115} INFO - [2023-10-28 03:02:16,886] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:02:16,912] {logging_mixin.py:115} INFO - [2023-10-28 03:02:16,911] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:02:16,923] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 5.248 seconds
+[2023-10-28 03:02:46,998] {processor.py:153} INFO - Started process (PID=1042) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:47,000] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:02:47,000] {logging_mixin.py:115} INFO - [2023-10-28 03:02:47,000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:47,009] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:02:47,196] {logging_mixin.py:115} INFO - [2023-10-28 03:02:47,196] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:02:47,222] {logging_mixin.py:115} INFO - [2023-10-28 03:02:47,222] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:02:47,234] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.240 seconds
+[2023-10-28 03:03:17,316] {processor.py:153} INFO - Started process (PID=1062) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:17,317] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:03:17,317] {logging_mixin.py:115} INFO - [2023-10-28 03:03:17,317] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:17,326] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:17,508] {logging_mixin.py:115} INFO - [2023-10-28 03:03:17,508] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:03:17,532] {logging_mixin.py:115} INFO - [2023-10-28 03:03:17,532] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:03:17,544] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.232 seconds
+[2023-10-28 03:03:47,623] {processor.py:153} INFO - Started process (PID=1091) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:47,624] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:03:47,625] {logging_mixin.py:115} INFO - [2023-10-28 03:03:47,625] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:47,634] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:03:47,812] {logging_mixin.py:115} INFO - [2023-10-28 03:03:47,812] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:03:47,837] {logging_mixin.py:115} INFO - [2023-10-28 03:03:47,837] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:03:47,849] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.230 seconds
+[2023-10-28 03:04:17,930] {processor.py:153} INFO - Started process (PID=1111) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:17,931] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:04:17,931] {logging_mixin.py:115} INFO - [2023-10-28 03:04:17,931] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:17,940] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:23,131] {logging_mixin.py:115} INFO - [2023-10-28 03:04:23,131] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:04:23,157] {logging_mixin.py:115} INFO - [2023-10-28 03:04:23,156] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:04:23,169] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 5.243 seconds
+[2023-10-28 03:04:53,252] {processor.py:153} INFO - Started process (PID=1140) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:53,253] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:04:53,254] {logging_mixin.py:115} INFO - [2023-10-28 03:04:53,253] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:53,262] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:04:53,451] {logging_mixin.py:115} INFO - [2023-10-28 03:04:53,451] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:04:53,476] {logging_mixin.py:115} INFO - [2023-10-28 03:04:53,476] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:04:53,488] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.241 seconds
+[2023-10-28 03:05:23,581] {processor.py:153} INFO - Started process (PID=1168) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:23,581] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:05:23,582] {logging_mixin.py:115} INFO - [2023-10-28 03:05:23,582] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:23,591] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:23,793] {logging_mixin.py:115} INFO - [2023-10-28 03:05:23,793] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:05:23,818] {logging_mixin.py:115} INFO - [2023-10-28 03:05:23,818] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:05:23,831] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.254 seconds
+[2023-10-28 03:05:53,913] {processor.py:153} INFO - Started process (PID=1197) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:53,914] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:05:53,915] {logging_mixin.py:115} INFO - [2023-10-28 03:05:53,915] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:53,923] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:05:54,109] {logging_mixin.py:115} INFO - [2023-10-28 03:05:54,109] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:05:54,134] {logging_mixin.py:115} INFO - [2023-10-28 03:05:54,134] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:05:54,145] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.237 seconds
+[2023-10-28 03:06:24,229] {processor.py:153} INFO - Started process (PID=1219) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:24,229] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:06:24,230] {logging_mixin.py:115} INFO - [2023-10-28 03:06:24,230] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:24,239] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:24,441] {logging_mixin.py:115} INFO - [2023-10-28 03:06:24,441] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:06:24,465] {logging_mixin.py:115} INFO - [2023-10-28 03:06:24,465] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:06:24,477] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.252 seconds
+[2023-10-28 03:06:54,557] {processor.py:153} INFO - Started process (PID=1248) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:54,559] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:06:54,559] {logging_mixin.py:115} INFO - [2023-10-28 03:06:54,559] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:54,568] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:06:54,776] {logging_mixin.py:115} INFO - [2023-10-28 03:06:54,776] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:06:54,802] {logging_mixin.py:115} INFO - [2023-10-28 03:06:54,801] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:06:54,814] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.261 seconds
+[2023-10-28 03:07:24,895] {processor.py:153} INFO - Started process (PID=1268) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:24,895] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:07:24,896] {logging_mixin.py:115} INFO - [2023-10-28 03:07:24,896] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:24,910] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:25,088] {logging_mixin.py:115} INFO - [2023-10-28 03:07:25,088] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:07:25,114] {logging_mixin.py:115} INFO - [2023-10-28 03:07:25,114] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:07:25,126] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.235 seconds
+[2023-10-28 03:07:55,207] {processor.py:153} INFO - Started process (PID=1297) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:55,208] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:07:55,209] {logging_mixin.py:115} INFO - [2023-10-28 03:07:55,208] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:55,222] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:07:55,407] {logging_mixin.py:115} INFO - [2023-10-28 03:07:55,407] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:07:55,432] {logging_mixin.py:115} INFO - [2023-10-28 03:07:55,432] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:07:55,444] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.241 seconds
+[2023-10-28 03:08:25,530] {processor.py:153} INFO - Started process (PID=1327) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:25,531] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:08:25,532] {logging_mixin.py:115} INFO - [2023-10-28 03:08:25,531] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:25,547] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:25,747] {logging_mixin.py:115} INFO - [2023-10-28 03:08:25,746] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:08:25,773] {logging_mixin.py:115} INFO - [2023-10-28 03:08:25,773] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:08:25,785] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.259 seconds
+[2023-10-28 03:08:55,863] {processor.py:153} INFO - Started process (PID=1347) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:55,864] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:08:55,865] {logging_mixin.py:115} INFO - [2023-10-28 03:08:55,865] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:55,878] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:08:56,056] {logging_mixin.py:115} INFO - [2023-10-28 03:08:56,056] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:08:56,081] {logging_mixin.py:115} INFO - [2023-10-28 03:08:56,080] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:08:56,092] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.233 seconds
+[2023-10-28 03:09:26,173] {processor.py:153} INFO - Started process (PID=1378) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:26,173] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:09:26,174] {logging_mixin.py:115} INFO - [2023-10-28 03:09:26,174] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:26,187] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:26,367] {logging_mixin.py:115} INFO - [2023-10-28 03:09:26,367] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:09:26,392] {logging_mixin.py:115} INFO - [2023-10-28 03:09:26,392] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:09:26,404] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.236 seconds
+[2023-10-28 03:09:56,483] {processor.py:153} INFO - Started process (PID=1398) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:56,484] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:09:56,484] {logging_mixin.py:115} INFO - [2023-10-28 03:09:56,484] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:56,498] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:09:56,676] {logging_mixin.py:115} INFO - [2023-10-28 03:09:56,676] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:09:56,701] {logging_mixin.py:115} INFO - [2023-10-28 03:09:56,701] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:09:56,713] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.235 seconds
+[2023-10-28 03:10:26,794] {processor.py:153} INFO - Started process (PID=1427) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:26,795] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:10:26,796] {logging_mixin.py:115} INFO - [2023-10-28 03:10:26,796] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:26,810] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:27,010] {logging_mixin.py:115} INFO - [2023-10-28 03:10:27,010] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:10:27,035] {logging_mixin.py:115} INFO - [2023-10-28 03:10:27,035] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:10:27,047] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.257 seconds
+[2023-10-28 03:10:57,123] {processor.py:153} INFO - Started process (PID=1457) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:57,124] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:10:57,124] {logging_mixin.py:115} INFO - [2023-10-28 03:10:57,124] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:57,139] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:10:57,325] {logging_mixin.py:115} INFO - [2023-10-28 03:10:57,325] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:10:57,353] {logging_mixin.py:115} INFO - [2023-10-28 03:10:57,353] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:10:57,366] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.247 seconds
+[2023-10-28 03:11:27,446] {processor.py:153} INFO - Started process (PID=1477) to work on /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:11:27,447] {processor.py:641} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-10-28 03:11:27,447] {logging_mixin.py:115} INFO - [2023-10-28 03:11:27,447] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:11:27,461] {processor.py:651} INFO - DAG(s) dict_keys(['predict']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-10-28 03:11:27,645] {logging_mixin.py:115} INFO - [2023-10-28 03:11:27,645] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-28 03:11:27,670] {logging_mixin.py:115} INFO - [2023-10-28 03:11:27,670] {dag.py:2972} INFO - Setting next_dagrun for predict to 2023-10-26T15:00:00+00:00, run_after=2023-10-29T15:00:00+00:00
+[2023-10-28 03:11:27,681] {processor.py:161} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.240 seconds

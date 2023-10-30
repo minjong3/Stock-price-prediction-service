@@ -126,7 +126,18 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+        
+  update_data-container:
+    image: update_data:3.9.18
+    command: docker start update_data
+    depends_on:
+      - airflow-scheduler
 
+  predict-container:
+    image: deeplearning
+    command: docker start predict
+    depends_on:
+      - airflow-scheduler
   airflow-worker:
     <<: *airflow-common
     command: celery worker

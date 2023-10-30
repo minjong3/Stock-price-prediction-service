@@ -7,7 +7,7 @@ import json
 
 # MySQL 연결 설정
 db_config = {
-"host": "localhost",
+"host": "172.31.13.248",
 "user": "stock_user",
 "password": "1234asde",
 "database": "realdb"
@@ -16,6 +16,12 @@ db_config = {
 conn = mysql.connector.connect(**db_config)
 cursor = conn.cursor()
 
+# 연결이 제대로 설정되었는지 확인
+if conn.is_connected():
+    print("MySQL 데이터베이스에 연결되었습니다.")
+else:
+    print("MySQL 데이터베이스에 연결에 실패했습니다.")
+    
 # 데이터 가져오는 코드 추가
 headers = {'Content-Type': 'application/json', 'charset': 'UTF-8', 'Accept': '*/*'}
 url = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo"
@@ -44,22 +50,21 @@ for i in items:
     temp_df = pd.DataFrame()
 # 첫 번째 페이지 데이터를 가져와서 DataFrame으로 변환
     errorCount = 1
-    while errorCount <= 10 :
-        try:
-            response = requests.get(url=url, headers=headers, params=params)
-            total_count = response.json()['response']['body']['totalCount']
-            api_data = response.json()["response"]["body"]["items"]["item"]
-            df = pd.DataFrame(api_data)
-            break
-        except requests.exceptions.JSONDecodeError:
-                        time.sleep(5)
-                        print(f'error:{errorCount}')
-        except Exception:
-            errorCount = 11
-            break
+    total_count = 0
+    #while errorCount <= 10 :
+        # try:
+        #     print("test")
+    response = requests.get(url=url, headers=headers, params=params)
+    total_count = response.json()['response']['body']['totalCount']
+    api_data = response.json()["response"]["body"]["items"]["item"]
+    df = pd.DataFrame(api_data)
+        #     break
+        # except Exception:
+        #     errorCount = 11
+        #     sleep(5)
+        #     break
                         
         # 다음 페이지 데이터를 반복적으로 가져와서 DataFrame에 추가
-
     if total_count > params['numOfRows']:
         for i in range(2,total_count//10000+1):
             params['pageNo'] = i
@@ -70,6 +75,7 @@ for i in items:
                     data = response.json()["response"]["body"]["items"]["item"]
                     temp_df = pd.DataFrame(data)
                     df = pd.concat([df, temp_df], ignore_index=True)
+                    print('123')
                     break
                 except requests.exceptions.JSONDecodeError:
                     time.sleep(5)
@@ -112,3 +118,4 @@ for i in items:
 
 cursor.close()
 conn.close()
+print('저장완료')

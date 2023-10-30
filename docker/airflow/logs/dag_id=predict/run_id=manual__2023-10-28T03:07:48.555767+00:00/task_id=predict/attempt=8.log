@@ -1,0 +1,34 @@
+[2023-10-30 00:39:25,418] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: predict.predict manual__2023-10-28T03:07:48.555767+00:00 [queued]>
+[2023-10-30 00:39:25,430] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: predict.predict manual__2023-10-28T03:07:48.555767+00:00 [queued]>
+[2023-10-30 00:39:25,430] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-30 00:39:25,430] {taskinstance.py:1377} INFO - Starting attempt 8 of 11
+[2023-10-30 00:39:25,430] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-30 00:39:25,448] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): predict> on 2023-10-28 03:07:48.555767+00:00
+[2023-10-30 00:39:25,453] {standard_task_runner.py:52} INFO - Started process 1553 to run task
+[2023-10-30 00:39:25,456] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'predict', 'predict', 'manual__2023-10-28T03:07:48.555767+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/predict_dag.py', '--cfg-path', '/tmp/tmpx9vxos53', '--error-file', '/tmp/tmprkf9_t23']
+[2023-10-30 00:39:25,456] {standard_task_runner.py:80} INFO - Job 100: Subtask predict
+[2023-10-30 00:39:25,534] {task_command.py:371} INFO - Running <TaskInstance: predict.predict manual__2023-10-28T03:07:48.555767+00:00 [running]> on host 9161207b4c08
+[2023-10-30 00:39:25,634] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Admin
+AIRFLOW_CTX_DAG_ID=predict
+AIRFLOW_CTX_TASK_ID=predict
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-28T03:07:48.555767+00:00
+AIRFLOW_CTX_TRY_NUMBER=8
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-28T03:07:48.555767+00:00
+[2023-10-30 00:39:25,635] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-10-30 00:39:25,636] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'python3 predict.py']
+[2023-10-30 00:39:25,644] {subprocess.py:85} INFO - Output:
+[2023-10-30 00:39:25,775] {subprocess.py:92} INFO - python3: can't open file 'predict.py': [Errno 2] No such file or directory
+[2023-10-30 00:39:25,780] {subprocess.py:96} INFO - Command exited with return code 2
+[2023-10-30 00:39:25,798] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2023-10-30 00:39:25,803] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=predict, task_id=predict, execution_date=20231028T030748, start_date=20231030T003925, end_date=20231030T003925
+[2023-10-30 00:39:25,815] {standard_task_runner.py:97} ERROR - Failed to execute job 100 for task predict (Bash command failed. The command returned a non-zero exit code 2.; 1553)
+[2023-10-30 00:39:25,832] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-30 00:39:25,868] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

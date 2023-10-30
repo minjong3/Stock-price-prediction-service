@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.bash import BashOperator
+from airflow.providers.docker.operators.docker import DockerOperator
 
 default_args = {
     'owner': 'Admin',
@@ -19,8 +19,9 @@ dag = DAG(
     tags=['update_data'],
 )
 
-run_my_python_script_task = BashOperator(
+update_data_task = DockerOperator(
     task_id='update_data',
-    bash_command='docker start update_data',
+    image='update_data update_data:3.9.18',
+    auto_remove=True,
     dag=dag,
 )

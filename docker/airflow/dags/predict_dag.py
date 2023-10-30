@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.bash import BashOperator
+from airflow.providers.docker.operators.docker import DockerOperator
 
 default_args = {
     'owner': 'Admin',
@@ -19,8 +19,9 @@ dag = DAG(
     tags=['predict'],
 )
 
-run_my_python_script_task = BashOperator(
+predict_task = DockerOperator(
     task_id='predict',
-    bash_command='docker start predict',
+    image='predict deeplearning',
+    auto_remove=True,
     dag=dag,
 )

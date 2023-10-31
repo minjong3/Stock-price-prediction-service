@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 WORKDIR ./app
 
-CMD python3 predict.py
+CMD 

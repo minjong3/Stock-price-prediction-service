@@ -1,0 +1,23 @@
+[2023-10-30 08:32:51,624] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: update_data.update_data manual__2023-10-30T08:32:51.295638+00:00 [queued]>
+[2023-10-30 08:32:51,640] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: update_data.update_data manual__2023-10-30T08:32:51.295638+00:00 [queued]>
+[2023-10-30 08:32:51,641] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-30 08:32:51,643] {taskinstance.py:1377} INFO - Starting attempt 1 of 11
+[2023-10-30 08:32:51,644] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-30 08:32:51,666] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): update_data> on 2023-10-30 08:32:51.295638+00:00
+[2023-10-30 08:32:51,671] {standard_task_runner.py:52} INFO - Started process 145 to run task
+[2023-10-30 08:32:51,674] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'update_data', 'update_data', 'manual__2023-10-30T08:32:51.295638+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/update_data_dag.py', '--cfg-path', '/tmp/tmp12gz1_if', '--error-file', '/tmp/tmpl9yuyw4n']
+[2023-10-30 08:32:51,675] {standard_task_runner.py:80} INFO - Job 151: Subtask update_data
+[2023-10-30 08:32:51,773] {task_command.py:371} INFO - Running <TaskInstance: update_data.update_data manual__2023-10-30T08:32:51.295638+00:00 [running]> on host 5447ec3a28c0
+[2023-10-30 08:32:51,865] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Admin
+AIRFLOW_CTX_DAG_ID=update_data
+AIRFLOW_CTX_TASK_ID=update_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-30T08:32:51.295638+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-30T08:32:51.295638+00:00
+[2023-10-30 08:32:52,009] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-30 08:32:52,041] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=update_data, task_id=update_data, execution_date=20231030T083251, start_date=20231030T083251, end_date=20231030T083252
+[2023-10-30 08:32:52,097] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-30 08:32:52,133] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

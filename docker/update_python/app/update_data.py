@@ -21,11 +21,17 @@ def collect_and_update_data():
     cursor = conn.cursor()
     wentday = datetime.today() - timedelta(days=3) # 금요일 데이터를 월요일에 가져와서 이렇게 함
     beginBasDt = f'{wentday.year}{wentday.month}{wentday.day}' 
+    
+    # 키 불러오기
+    key_path = '/home/ubuntu/mlopspipeline/key.txt'
+    
+    with open(key_path, 'r', encoding="UTF-8") as f:
+        key = f.readline()
+        
     # 데이터 가져오는 코드 추가
     headers = {'Content-Type': 'application/json', 'charset': 'UTF-8', 'Accept': '*/*'}
     url = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo"
 
-    key = '9+xsULVVtkmcT9/of4fUpyEz4wLCUNLexYSxxX1KI8yeVtKaNIw2698qQ+ymG5I1ibMzd3nN7AZkA/r2brLmVg=='
     # 원하는 항목들을 리스트로 정의
     items = ['삼성전자', 'SK하이닉스', '삼성바이오로직스', '삼성SDI',
         'LG화학', '현대차', 'NAVER', '카카오', 'KB금융', '현대모비스', '셀트리온']

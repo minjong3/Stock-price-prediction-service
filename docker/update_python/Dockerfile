@@ -127,8 +127,9 @@ WORKDIR /home/ubuntu/mlopspipeline/docker/update_python/app
 
 COPY . .
 
+RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 WORKDIR ./app
 
-CMD python3 update_data.py
+CMD

@@ -99,6 +99,9 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
+    build:
+      context: .
+      dockerfile: Dockerfile
     command: webserver
     ports:
       - 8082:8080
@@ -127,15 +130,15 @@ services:
       airflow-init:
         condition: service_completed_successfully
         
-  update_data-container:
-    image: update_data:3.9.18
-    depends_on:
-      - airflow-scheduler
+        # update_data-container:
+        # image: update_data:3.9.18
+        # depends_on:
+        #- airflow-scheduler
 
-  predict-container:
-    image: deeplearning
-    depends_on:
-      - airflow-scheduler
+        # predict-container:
+        # image: deeplearning
+        # depends_on:
+        # - airflow-scheduler
 
   airflow-worker:
     <<: *airflow-common

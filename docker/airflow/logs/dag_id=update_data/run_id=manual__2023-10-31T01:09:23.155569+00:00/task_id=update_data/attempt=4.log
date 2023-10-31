@@ -1,0 +1,34 @@
+[2023-10-31 01:18:32,698] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: update_data.update_data manual__2023-10-31T01:09:23.155569+00:00 [queued]>
+[2023-10-31 01:18:32,710] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: update_data.update_data manual__2023-10-31T01:09:23.155569+00:00 [queued]>
+[2023-10-31 01:18:32,711] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-31 01:18:32,711] {taskinstance.py:1377} INFO - Starting attempt 4 of 11
+[2023-10-31 01:18:32,711] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-31 01:18:32,727] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): update_data> on 2023-10-31 01:09:23.155569+00:00
+[2023-10-31 01:18:32,732] {standard_task_runner.py:52} INFO - Started process 692 to run task
+[2023-10-31 01:18:32,736] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'update_data', 'update_data', 'manual__2023-10-31T01:09:23.155569+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/update_data_dag2.py', '--cfg-path', '/tmp/tmpe_j7t_tg', '--error-file', '/tmp/tmphvmcraoo']
+[2023-10-31 01:18:32,737] {standard_task_runner.py:80} INFO - Job 166: Subtask update_data
+[2023-10-31 01:18:37,815] {task_command.py:371} INFO - Running <TaskInstance: update_data.update_data manual__2023-10-31T01:09:23.155569+00:00 [running]> on host d7c4bbae6ce0
+[2023-10-31 01:18:37,898] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Admin
+AIRFLOW_CTX_DAG_ID=update_data
+AIRFLOW_CTX_TASK_ID=update_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-31T01:09:23.155569+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-31T01:09:23.155569+00:00
+[2023-10-31 01:18:37,899] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-10-31 01:18:37,900] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'docker start update_data']
+[2023-10-31 01:18:37,909] {subprocess.py:85} INFO - Output:
+[2023-10-31 01:18:37,911] {subprocess.py:92} INFO - bash: line 1: docker: command not found
+[2023-10-31 01:18:37,912] {subprocess.py:96} INFO - Command exited with return code 127
+[2023-10-31 01:18:37,929] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2023-10-31 01:18:37,933] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=update_data, task_id=update_data, execution_date=20231031T010923, start_date=20231031T011832, end_date=20231031T011837
+[2023-10-31 01:18:37,946] {standard_task_runner.py:97} ERROR - Failed to execute job 166 for task update_data (Bash command failed. The command returned a non-zero exit code 127.; 692)
+[2023-10-31 01:18:37,972] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-31 01:18:38,000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

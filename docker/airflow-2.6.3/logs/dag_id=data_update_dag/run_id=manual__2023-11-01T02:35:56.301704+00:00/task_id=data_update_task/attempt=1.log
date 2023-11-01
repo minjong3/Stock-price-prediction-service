@@ -1,0 +1,24 @@
+[2023-11-01T02:35:58.387+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_update_dag.data_update_task manual__2023-11-01T02:35:56.301704+00:00 [queued]>
+[2023-11-01T02:35:58.399+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_update_dag.data_update_task manual__2023-11-01T02:35:56.301704+00:00 [queued]>
+[2023-11-01T02:35:58.400+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-11-01T02:35:58.428+0000] {taskinstance.py:1327} INFO - Executing <Task(UpdateDataOperator): data_update_task> on 2023-11-01 02:35:56.301704+00:00
+[2023-11-01T02:35:58.440+0000] {standard_task_runner.py:57} INFO - Started process 1934 to run task
+[2023-11-01T02:35:58.449+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_update_dag', 'data_update_task', 'manual__2023-11-01T02:35:56.301704+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/update_dag.py', '--cfg-path', '/tmp/tmpsj3xj02n']
+[2023-11-01T02:35:58.454+0000] {standard_task_runner.py:85} INFO - Job 13: Subtask data_update_task
+[2023-11-01T02:35:58.555+0000] {task_command.py:410} INFO - Running <TaskInstance: data_update_dag.data_update_task manual__2023-11-01T02:35:56.301704+00:00 [running]> on host 4c3d82a97f2f
+[2023-11-01T02:35:58.692+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Admin' AIRFLOW_CTX_DAG_ID='data_update_dag' AIRFLOW_CTX_TASK_ID='data_update_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-01T02:35:56.301704+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-01T02:35:56.301704+00:00'
+[2023-11-01T02:35:58.694+0000] {update_operator.py:28} INFO - 데이터 업데이트 스크립트를 실행합니다: /opt/***/dags/update_data.py
+[2023-11-01T02:36:00.272+0000] {update_operator.py:34} ERROR - 데이터 업데이트 스크립트 실행 중 오류 발생: Command '['python', '/opt/airflow/dags/update_data.py']' returned non-zero exit status 1.
+[2023-11-01T02:36:00.275+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/update_operator.py", line 35, in execute
+    raise e
+  File "/opt/airflow/dags/update_operator.py", line 31, in execute
+    subprocess.run(['python', self.script_path], check=True)
+  File "/usr/local/lib/python3.7/subprocess.py", line 512, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python', '/opt/airflow/dags/update_data.py']' returned non-zero exit status 1.
+[2023-11-01T02:36:00.294+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=data_update_dag, task_id=data_update_task, execution_date=20231101T023556, start_date=20231101T023558, end_date=20231101T023600
+[2023-11-01T02:36:00.315+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 13 for task data_update_task (Command '['python', '/opt/airflow/dags/update_data.py']' returned non-zero exit status 1.; 1934)
+[2023-11-01T02:36:00.351+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-11-01T02:36:00.386+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

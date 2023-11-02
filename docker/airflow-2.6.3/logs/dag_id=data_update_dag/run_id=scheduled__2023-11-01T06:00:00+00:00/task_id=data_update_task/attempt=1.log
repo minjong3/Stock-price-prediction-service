@@ -1,0 +1,14 @@
+[2023-11-02T06:00:02.598+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_update_dag.data_update_task scheduled__2023-11-01T06:00:00+00:00 [queued]>
+[2023-11-02T06:00:02.609+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_update_dag.data_update_task scheduled__2023-11-01T06:00:00+00:00 [queued]>
+[2023-11-02T06:00:02.609+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 11
+[2023-11-02T06:00:02.628+0000] {taskinstance.py:1327} INFO - Executing <Task(UpdateDataOperator): data_update_task> on 2023-11-01 06:00:00+00:00
+[2023-11-02T06:00:02.634+0000] {standard_task_runner.py:57} INFO - Started process 1286 to run task
+[2023-11-02T06:00:02.639+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_update_dag', 'data_update_task', 'scheduled__2023-11-01T06:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/update_dag.py', '--cfg-path', '/tmp/tmpf827d9fd']
+[2023-11-02T06:00:02.642+0000] {standard_task_runner.py:85} INFO - Job 29: Subtask data_update_task
+[2023-11-02T06:00:02.698+0000] {task_command.py:410} INFO - Running <TaskInstance: data_update_dag.data_update_task scheduled__2023-11-01T06:00:00+00:00 [running]> on host 699e1a4b8602
+[2023-11-02T06:00:02.818+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Admin' AIRFLOW_CTX_DAG_ID='data_update_dag' AIRFLOW_CTX_TASK_ID='data_update_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-01T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-01T06:00:00+00:00'
+[2023-11-02T06:00:02.820+0000] {update_operator.py:28} INFO - 데이터 업데이트 스크립트를 실행합니다: /opt/***/dags/pythonfile/update_data.py
+[2023-11-02T06:00:12.231+0000] {update_operator.py:32} INFO - 데이터 업데이트 스크립트 실행이 완료되었습니다.
+[2023-11-02T06:00:12.255+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=data_update_dag, task_id=data_update_task, execution_date=20231101T060000, start_date=20231102T060002, end_date=20231102T060012
+[2023-11-02T06:00:12.330+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-11-02T06:00:12.352+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

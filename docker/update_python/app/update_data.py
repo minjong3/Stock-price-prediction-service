@@ -19,14 +19,26 @@ def collect_and_update_data():
 
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
+    
+    # 연결이 제대로 설정되었는지 확인
+    if conn.is_connected():
+        print("MySQL 데이터베이스에 연결되었습니다.")
+    else:
+        print("MySQL 데이터베이스에 연결에 실패했습니다.")
+    
     wentday = datetime.today() - timedelta(days=3) # 금요일 데이터를 월요일에 가져와서 이렇게 함
     beginBasDt = f'{wentday.year}{wentday.month}{wentday.day}' 
     
     # 키 불러오기
     key_path = '/home/ubuntu/mlopspipeline/key.txt'
     
-    with open(key_path, 'r', encoding="UTF-8") as f:
-        key = f.readline()
+    try:
+        with open(key_path, 'r', encoding="UTF-8") as f:
+            key = f.readline()
+        # 파일 읽기에 성공하면 key 변수에 키 값이 들어갑니다.
+        print("파일을 성공적으로 읽었습니다.")
+    except:
+        print(f"파일을 찾을 수 없습니다: {key_path}")
         
     # 데이터 가져오는 코드 추가
     headers = {'Content-Type': 'application/json', 'charset': 'UTF-8', 'Accept': '*/*'}
@@ -61,6 +73,7 @@ def collect_and_update_data():
                 total_count = response.json()['response']['body']['totalCount']
                 api_data = response.json()["response"]["body"]["items"]["item"]
                 df = pd.DataFrame(api_data)
+                print('api 연결성공')
                 break
             except requests.exceptions.JSONDecodeError:
                             time.sleep(5)

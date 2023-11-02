@@ -1,15 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 import mysql.connector
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')  # 템플릿 디렉토리를 설정
+
 
 # MySQL 연결 설정
 db_config = {
-"host": "172.31.13.248",
-"user": "stock_user",
-"password": "1234asde",
-"database": "realdb"
+    "host": "172.31.13.248",
+    "user": "stock_user",
+    "password": "1234asde",
+    "database": "realdb"
 }
 
 conn = mysql.connector.connect(**db_config)
@@ -18,20 +19,15 @@ cursor = conn.cursor()
 if conn.is_connected():
     print("MySQL 데이터베이스에 연결되었습니다.")
 else:
-    print("MySQL 데이터베이스에 연결에 실패했습니다.")
+        print("MySQL 데이터베이스에 연결에 실패했습니다.")
 
-# Flask 애플리케이션 엔드포인트
-@app.route('/')
-def get_all_data():
-    query = "SELECT * FROM stocks WHERE itmsNm = '삼성전자' AND basDt = '2023-10-17';"
-    cursor.execute(query)
+@app.route('/predicted_data')
+def show_predicted_data():
+    # SQL 쿼리 실행
+    cursor.execute("SELECT * FROM predicted ORDER BY basDt DESC LIMIT 11;")
     data = cursor.fetchall()
-
-    columns = [column[0] for column in cursor.description]
-    df = pd.DataFrame(data, columns=columns)  # 데이터를 데이터 프레임으로 변환
-
-    text_data = df.to_string(index=False)  # 데이터 프레임을 문자열로 변환
-    return text_data
+    
+    return render_template('predicted_table.html', data=data)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

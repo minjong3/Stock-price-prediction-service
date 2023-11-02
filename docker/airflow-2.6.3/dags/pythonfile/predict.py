@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import mysql.connector
 from datetime import datetime, timedelta
+from airflow.models import Variable
 
 def connect_to_database():
     

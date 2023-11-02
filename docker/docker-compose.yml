@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  flask:
+    build: ./flaskapp
+    networks:
+      - composenet01
+    restart: always
+
+  nginx:
+    build: ./nginx
+    networks:
+      - composenet01
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - flask
+
+networks:
+  composenet01:

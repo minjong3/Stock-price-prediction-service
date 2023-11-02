@@ -1,0 +1,14 @@
+[2023-11-01T05:00:02.757+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [queued]>
+[2023-11-01T05:00:02.769+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [queued]>
+[2023-11-01T05:00:02.770+0000] {taskinstance.py:1308} INFO - Starting attempt 4 of 11
+[2023-11-01T05:00:02.789+0000] {taskinstance.py:1327} INFO - Executing <Task(predictOperator): predict_task> on 2023-11-01 04:44:33.032328+00:00
+[2023-11-01T05:00:02.800+0000] {standard_task_runner.py:57} INFO - Started process 764 to run task
+[2023-11-01T05:00:02.806+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'predict_dag', 'predict_task', 'manual__2023-11-01T04:44:33.032328+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/predict_dag.py', '--cfg-path', '/tmp/tmp0wa4u9qp']
+[2023-11-01T05:00:02.811+0000] {standard_task_runner.py:85} INFO - Job 24: Subtask predict_task
+[2023-11-01T05:00:02.883+0000] {task_command.py:410} INFO - Running <TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [running]> on host 699e1a4b8602
+[2023-11-01T05:00:02.994+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Admin' AIRFLOW_CTX_DAG_ID='predict_dag' AIRFLOW_CTX_TASK_ID='predict_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-01T04:44:33.032328+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-01T04:44:33.032328+00:00'
+[2023-11-01T05:00:02.996+0000] {predict_operator.py:28} INFO - 데이터 업데이트 스크립트를 실행합니다: /opt/***/dags/pythonfile/predict.py
+[2023-11-01T05:06:50.826+0000] {predict_operator.py:32} INFO - 데이터 업데이트 스크립트 실행이 완료되었습니다.
+[2023-11-01T05:06:50.844+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=predict_dag, task_id=predict_task, execution_date=20231101T044433, start_date=20231101T050002, end_date=20231101T050650
+[2023-11-01T05:06:50.885+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-11-01T05:06:50.908+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -56,7 +56,7 @@ x-airflow-common:
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
-    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
@@ -99,12 +99,9 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
-    build:
-      context: .
-      dockerfile: Dockerfile
     command: webserver
     ports:
-      - 8082:8080
+      - 8080:8080
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 10s
@@ -129,16 +126,6 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-        
-        # update_data-container:
-        # image: update_data:3.9.18
-        # depends_on:
-        #- airflow-scheduler
-
-        # predict-container:
-        # image: deeplearning
-        # depends_on:
-        # - airflow-scheduler
 
   airflow-worker:
     <<: *airflow-common

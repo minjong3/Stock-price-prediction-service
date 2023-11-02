@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-import subprocess
+from airflow.operators.bash_operator import BashOperator
 
 default_args = {
     'owner': 'Admin',
@@ -20,13 +19,9 @@ dag = DAG(
     tags=['predict'],
 )
 
-def run_predict():
-    # "python3 predict.py" 명령을 실행
-    subprocess.run(["python3", "predict.py"])
-
-predict_task = PythonOperator(
+predict_task = BashOperator(
     task_id='predict',
-    python_callable=run_predict,
+    bash_command='python3 predict.py',
     dag=dag,
 )
 

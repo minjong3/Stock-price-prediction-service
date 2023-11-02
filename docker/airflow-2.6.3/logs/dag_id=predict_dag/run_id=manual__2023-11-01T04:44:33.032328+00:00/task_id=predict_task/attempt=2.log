@@ -1,0 +1,24 @@
+[2023-11-01T04:49:44.993+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [queued]>
+[2023-11-01T04:49:45.005+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [queued]>
+[2023-11-01T04:49:45.005+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 11
+[2023-11-01T04:49:45.024+0000] {taskinstance.py:1327} INFO - Executing <Task(predictOperator): predict_task> on 2023-11-01 04:44:33.032328+00:00
+[2023-11-01T04:49:45.033+0000] {standard_task_runner.py:57} INFO - Started process 569 to run task
+[2023-11-01T04:49:45.039+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'predict_dag', 'predict_task', 'manual__2023-11-01T04:44:33.032328+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/predict_dag.py', '--cfg-path', '/tmp/tmpvffghuo0']
+[2023-11-01T04:49:45.044+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask predict_task
+[2023-11-01T04:49:45.113+0000] {task_command.py:410} INFO - Running <TaskInstance: predict_dag.predict_task manual__2023-11-01T04:44:33.032328+00:00 [running]> on host 699e1a4b8602
+[2023-11-01T04:49:45.224+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Admin' AIRFLOW_CTX_DAG_ID='predict_dag' AIRFLOW_CTX_TASK_ID='predict_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-01T04:44:33.032328+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-01T04:44:33.032328+00:00'
+[2023-11-01T04:49:45.226+0000] {predict_operator.py:28} INFO - 데이터 업데이트 스크립트를 실행합니다: /opt/***/dags/pythonfile/predict.py
+[2023-11-01T04:49:51.651+0000] {predict_operator.py:34} ERROR - 데이터 업데이트 스크립트 실행 중 오류 발생: Command '['python', '/opt/airflow/dags/pythonfile/predict.py']' returned non-zero exit status 1.
+[2023-11-01T04:49:51.654+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 35, in execute
+    raise e
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 31, in execute
+    subprocess.run(['python', self.script_path], check=True)
+  File "/usr/local/lib/python3.7/subprocess.py", line 512, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python', '/opt/airflow/dags/pythonfile/predict.py']' returned non-zero exit status 1.
+[2023-11-01T04:49:51.669+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=predict_dag, task_id=predict_task, execution_date=20231101T044433, start_date=20231101T044944, end_date=20231101T044951
+[2023-11-01T04:49:51.686+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 22 for task predict_task (Command '['python', '/opt/airflow/dags/pythonfile/predict.py']' returned non-zero exit status 1.; 569)
+[2023-11-01T04:49:51.723+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-11-01T04:49:51.745+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-import subprocess
+from airflow.operators.bash_operator import BashOperator
 
 default_args = {
     'owner': 'Admin',
@@ -20,13 +19,9 @@ dag = DAG(
     tags=['update_data'],
 )
 
-def run_update_data():
-    # "python3 update_data.py" 명령을 실행
-    subprocess.run(["python3", "update_data.py"])
-
-update_data_task = PythonOperator(
+update_data_task = BashOperator(
     task_id='update_data',
-    python_callable=run_update_data,
+    bash_command='python3 update_data.py',
     dag=dag,
 )
 

@@ -1,0 +1,331 @@
+[2023-11-01T04:36:11.451+0000] {processor.py:157} INFO - Started process (PID=1782) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:11.452+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:36:11.453+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:36:11.453+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:11.470+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:36:11.468+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:36:11.470+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:11.501+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.056 seconds
+[2023-11-01T04:36:41.840+0000] {processor.py:157} INFO - Started process (PID=1841) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:41.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:36:41.843+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:36:41.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:41.858+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:36:41.855+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:36:41.858+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:36:41.886+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.052 seconds
+[2023-11-01T04:37:12.085+0000] {processor.py:157} INFO - Started process (PID=1900) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:12.087+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:37:12.088+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:37:12.088+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:12.103+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:37:12.101+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:37:12.103+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:12.132+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.052 seconds
+[2023-11-01T04:37:42.600+0000] {processor.py:157} INFO - Started process (PID=1959) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:42.602+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:37:42.603+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:37:42.602+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:42.617+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:37:42.615+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:37:42.618+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:37:42.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.051 seconds
+[2023-11-01T04:38:13.356+0000] {processor.py:157} INFO - Started process (PID=2018) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:13.358+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:38:13.359+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:38:13.358+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:13.373+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:38:13.371+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:38:13.374+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:13.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.051 seconds
+[2023-11-01T04:38:43.873+0000] {processor.py:157} INFO - Started process (PID=2077) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:43.875+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:38:43.876+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:38:43.875+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:43.891+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:38:43.889+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 17, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:38:43.891+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:38:43.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.052 seconds
+[2023-11-01T04:39:02.106+0000] {processor.py:157} INFO - Started process (PID=2111) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:02.108+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:39:02.109+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:02.109+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:02.117+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:02.115+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 9, in <module>
+    'retry_delay': timedelta(minutes=3),
+NameError: name 'timedelta' is not defined
+[2023-11-01T04:39:02.117+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:02.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.053 seconds
+[2023-11-01T04:39:05.097+0000] {processor.py:157} INFO - Started process (PID=2126) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:05.098+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:39:05.099+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:05.099+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:05.106+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:05.105+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 9, in <module>
+    'retry_delay': timedelta(minutes=3),
+NameError: name 'timedelta' is not defined
+[2023-11-01T04:39:05.107+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:05.135+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.043 seconds
+[2023-11-01T04:39:35.258+0000] {processor.py:157} INFO - Started process (PID=2183) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:35.259+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:39:35.261+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:35.260+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:35.267+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:39:35.266+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 9, in <module>
+    'retry_delay': timedelta(minutes=3),
+NameError: name 'timedelta' is not defined
+[2023-11-01T04:39:35.268+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:39:35.297+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.044 seconds
+[2023-11-01T04:40:05.917+0000] {processor.py:157} INFO - Started process (PID=2241) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:05.919+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:40:05.920+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:40:05.920+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:05.927+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:40:05.926+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 9, in <module>
+    'retry_delay': timedelta(minutes=3),
+NameError: name 'timedelta' is not defined
+[2023-11-01T04:40:05.928+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:05.961+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.049 seconds
+[2023-11-01T04:40:36.283+0000] {processor.py:157} INFO - Started process (PID=2300) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:36.285+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:40:36.287+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:40:36.286+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:36.293+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:40:36.292+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 9, in <module>
+    'retry_delay': timedelta(minutes=3),
+NameError: name 'timedelta' is not defined
+[2023-11-01T04:40:36.294+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:40:36.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.061 seconds
+[2023-11-01T04:41:03.158+0000] {processor.py:157} INFO - Started process (PID=2341) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:03.159+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:41:03.161+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:03.160+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:03.176+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:03.174+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 23, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:41:03.177+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:03.205+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.052 seconds
+[2023-11-01T04:41:04.101+0000] {processor.py:157} INFO - Started process (PID=2349) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:04.102+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:41:04.103+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:04.103+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:04.119+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:04.117+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 23, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:41:04.119+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:04.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.053 seconds
+[2023-11-01T04:41:34.458+0000] {processor.py:157} INFO - Started process (PID=2404) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:34.460+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:41:34.461+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:34.461+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:34.476+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:41:34.474+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/predict_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/predict_dag.py", line 23, in <module>
+    dag=dag,  # 이 Task를 DAG에 추가
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/decorators.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/airflow/dags/custom_operators/predict_operator.py", line 18, in __init__
+    super(UpdateDataOperator, self).__init__(*args, **kwargs)
+NameError: name 'UpdateDataOperator' is not defined
+[2023-11-01T04:41:34.477+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:41:34.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.054 seconds
+[2023-11-01T04:42:05.095+0000] {processor.py:157} INFO - Started process (PID=2463) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:05.097+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:42:05.098+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:05.097+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:05.114+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_update_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:05.291+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:05.290+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:42:05.328+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:05.328+0000] {dag.py:3508} INFO - Setting next_dagrun for data_update_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:42:05.361+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.271 seconds
+[2023-11-01T04:42:35.539+0000] {processor.py:157} INFO - Started process (PID=2522) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:35.541+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:42:35.543+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:35.542+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:35.558+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_update_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:42:35.593+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:35.593+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:42:35.634+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:42:35.634+0000] {dag.py:3508} INFO - Setting next_dagrun for data_update_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:42:35.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.134 seconds
+[2023-11-01T04:43:05.861+0000] {processor.py:157} INFO - Started process (PID=2581) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:05.862+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:43:05.863+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:05.863+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:05.877+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_update_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:05.897+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:05.897+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:43:05.939+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:05.939+0000] {dag.py:3508} INFO - Setting next_dagrun for data_update_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:43:05.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.112 seconds
+[2023-11-01T04:43:36.260+0000] {processor.py:157} INFO - Started process (PID=2640) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:36.262+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:43:36.263+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:36.263+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:36.277+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_update_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:43:36.448+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:36.448+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:43:36.487+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:43:36.486+0000] {dag.py:3508} INFO - Setting next_dagrun for data_update_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:43:36.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.258 seconds
+[2023-11-01T04:44:06.604+0000] {processor.py:157} INFO - Started process (PID=2700) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:06.605+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:44:06.607+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:06.606+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:06.620+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_update_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:06.654+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:06.653+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:44:06.695+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:06.695+0000] {dag.py:3508} INFO - Setting next_dagrun for data_update_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:44:06.721+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.122 seconds
+[2023-11-01T04:44:15.380+0000] {processor.py:157} INFO - Started process (PID=2728) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:15.382+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:44:15.383+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.383+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:15.397+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:15.542+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.541+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:predict_dag
+[2023-11-01T04:44:15.559+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.559+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:predict_dag
+[2023-11-01T04:44:15.568+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.568+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:predict_dag
+[2023-11-01T04:44:15.589+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.589+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:44:15.608+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.607+0000] {dag.py:2763} INFO - Creating ORM DAG for predict_dag
+[2023-11-01T04:44:15.627+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:15.627+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:44:15.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.274 seconds
+[2023-11-01T04:44:45.919+0000] {processor.py:157} INFO - Started process (PID=2786) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:45.921+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:44:45.922+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:45.922+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:45.937+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:44:45.969+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:45.969+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:44:46.008+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:44:46.007+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:44:46.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.119 seconds
+[2023-11-01T04:45:16.364+0000] {processor.py:157} INFO - Started process (PID=2845) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:16.365+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:45:16.366+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:16.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:16.381+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:16.415+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:16.415+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:45:16.453+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:16.453+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:00:00+00:00, run_after=2023-11-02T06:00:00+00:00
+[2023-11-01T04:45:16.478+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.120 seconds
+[2023-11-01T04:45:25.862+0000] {processor.py:157} INFO - Started process (PID=2849) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:25.864+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:45:25.865+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:25.864+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:25.880+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:26.050+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:26.050+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:45:26.084+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:26.084+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:10:00+00:00, run_after=2023-11-02T06:10:00+00:00
+[2023-11-01T04:45:26.113+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.256 seconds
+[2023-11-01T04:45:56.469+0000] {processor.py:157} INFO - Started process (PID=2908) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:56.470+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:45:56.472+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:56.471+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:56.486+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:45:56.521+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:56.521+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:45:56.560+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:45:56.560+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:10:00+00:00, run_after=2023-11-02T06:10:00+00:00
+[2023-11-01T04:45:56.586+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.123 seconds
+[2023-11-01T04:46:27.218+0000] {processor.py:157} INFO - Started process (PID=2967) to work on /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:46:27.221+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/predict_dag.py for tasks to queue
+[2023-11-01T04:46:27.222+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:46:27.222+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:46:27.237+0000] {processor.py:836} INFO - DAG(s) dict_keys(['predict_dag']) retrieved from /opt/airflow/dags/predict_dag.py
+[2023-11-01T04:46:27.275+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:46:27.274+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-11-01T04:46:27.326+0000] {logging_mixin.py:150} INFO - [2023-11-01T04:46:27.326+0000] {dag.py:3508} INFO - Setting next_dagrun for predict_dag to 2023-11-01T06:10:00+00:00, run_after=2023-11-02T06:10:00+00:00
+[2023-11-01T04:46:27.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/predict_dag.py took 0.144 seconds

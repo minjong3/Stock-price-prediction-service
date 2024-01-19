@@ -29,13 +29,15 @@
 - **데이터 베이스**
   ![Static Badge](https://img.shields.io/badge/MySQL%20-%23003057)
 
-### 프로젝트 구현 세부정보
+### 프로젝트 절차 및 세부 사항
 
-1. 공공 api를 통해 데이터를 받아 MySQL DB에 저장합니다.
-2. LSTM으로 다음날 시가를 예측 후 MySQL DB에 저장합니다.
-3. Grafana로 주식 데이터를 시각화 합니다.
-4. Flask를 이용해 다음날 시가를 예측하는 서비스를 배포합니다.
-5. Airflow를 통해 데이터 파이프라인을 자동화 시켜줍니다.
+1. EC2에 Docker를 설치해 밑에 작업들을 진행합니다.
+2. 공공 api를 통해 2010년 부터의 주식 데이터를 받아 MySQL DB에 저장합니다.
+3. 하루 단위로 주식 데이터를 받아 MySQL DB에 저장합니다.
+4. LSTM으로 다음날 시가를 예측 후 MySQL DB에 저장합니다.
+5. Grafana로 주식 데이터를 시각화 합니다.
+6. Flask를 이용해 다음날 시가를 예측하는 서비스를 배포합니다.
+7. Airflow를 통해 데이터 파이프라인을 자동화 시켜줍니다.
    
 ![image](https://github.com/minjong3/Stock-price-prediction-service/assets/131952523/2273261b-8361-4c01-9aca-c53548a498f6)
 
